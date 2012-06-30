@@ -216,5 +216,8 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_AWARE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+CONFIG_ACS := true
+CONFIG_IEEE80211AC := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm7250-common/BoardConfigVendor.mk
