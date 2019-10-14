@@ -448,3 +448,10 @@ persist.camera.sensor.debug=0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# ZRAM Writeback
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.zram.mark_idle_delay_mins=60 \
+ro.zram.first_wb_delay_mins=180 \
+ro.zram.periodic_wb_delay_hours=24
+
