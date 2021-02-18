@@ -8,6 +8,9 @@ COMMON_PATH := device/xiaomi/sm7250-common
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# APEX
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
