@@ -854,8 +854,6 @@ function enable_swap() {
         if [ ! -f /data/vendor/swap/swapfile ]; then
             dd if=/dev/zero of=/data/vendor/swap/swapfile bs=1m count=200
         fi
-        mkswap /data/vendor/swap/swapfile
-        swapon /data/vendor/swap/swapfile -p 32758
     fi
 }
 
