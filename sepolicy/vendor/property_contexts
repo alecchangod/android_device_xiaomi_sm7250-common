@@ -27,6 +27,9 @@ ro.hardware.fp                                  u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                                 u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor                                u:object_r:vendor_fp_prop:s0
 
+# GFX
+ro.vendor.gfx.32bit.target                      u:object_r:vendor_default_prop:s0
+
 # Global
 ro.boot.factorybuild                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.boot.hwversion                               u:object_r:vendor_public_vendor_default_prop:s0
