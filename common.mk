@@ -109,8 +109,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usbv2.default \
 
-#     audio.a2dp.default \
-
 PRODUCT_PACKAGES += \
     liba2dpoffload \
     libaudiopreprocessing \
