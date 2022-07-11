@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "alioth apollon cas cmi elish enuma lmi munch thyme umi"
+write_headers "alioth apollon cas cmi elish enuma lmi monet munch picasso thyme umi vangogh"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
