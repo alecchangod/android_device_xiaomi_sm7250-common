@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.kona \
+    audio.primary.$(TARGET_BOARD_PLATFORM) \
     audio.r_submix.default \
     audio.usbv2.default \
 
@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    memtrack.kona
+    memtrack.$(TARGET_BOARD_PLATFORM)
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
