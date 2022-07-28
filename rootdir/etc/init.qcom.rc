@@ -237,6 +237,9 @@ on boot
     # limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
+    # USB Fast Charge
+    write /sys/kernel/fast_charge/force_fast_charge 1
+
     # Smart charging
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
