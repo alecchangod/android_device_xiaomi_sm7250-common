@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.pixel.ext-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.xiaomi_lito.ext-libperfmgr"
 
 #include "PowerExt.h"
 
