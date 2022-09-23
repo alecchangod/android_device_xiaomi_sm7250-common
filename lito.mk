@@ -382,6 +382,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr
 
 PRODUCT_SOONG_NAMESPACES += \
