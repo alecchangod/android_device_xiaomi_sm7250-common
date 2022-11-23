@@ -119,6 +119,7 @@ ifeq ($(TARGET_BOARD_PLATFORM),lito)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 else
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/xiaomi/sm8250-common.config
 endif
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_SUPPORTS_LLVM_TOOLS := true
