@@ -76,8 +76,6 @@ endif
 BOARD_HAVE_QCOM_FM := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml \
-        vendor/evolution/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
@@ -98,7 +96,7 @@ ifeq (monet,$(PRODUCT_DEVICE))
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_VERSION := lolz
+TARGET_KERNEL_CLANG_VERSION := r450784d
 endif
 
 # Partitions
@@ -164,7 +162,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2022-03-01
 
 # Sepolicy
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
