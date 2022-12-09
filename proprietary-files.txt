@@ -181,14 +181,9 @@ vendor/lib64/vendor.display.color@1.5.so|2816ad7ee01408a8a91f14307a8b29e1c370ab4
 vendor/lib64/vendor.display.postproc@1.0.so|b3c3811c5f07773ef156701c31c448b85ad60c64
 
 # DPM - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-system/framework/tcmclient.jar|8483036d9354e88f8875d5eb2618165855438b09
 system_ext/bin/dpmd|d8d958c1e3e3962903505bc4e5e74017ba9d3c3d
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
-system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
-system_ext/etc/permissions/dpmapi.xml|255903759a60a31c0876ec004e74554c753270fe
-system_ext/framework/com.qti.dpmframework.jar|860ee07c410087de97ec10c325280ff3c57a094a
-system_ext/framework/dpmapi.jar|391a3515c090cee22e3d104651c903d66a2ca54a
 system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so|a634170b15ac486c13c1be5496600bf3a85cc1a2
 system_ext/lib/libdpmctmgr.so|8e61368846a4119e59e8b6b7157902952d881a41
 system_ext/lib/libdpmfdmgr.so|81022a42e8598eda8d26d6f7a822c82feb0e098c
@@ -398,7 +393,6 @@ vendor/etc/sap.conf
 vendor/etc/xtwifi.conf
 
 # IMS - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
--system_ext/app/imssettings/imssettings.apk|c5ba4c3ee143570145ad7cc55686d8df952971cb
 system_ext/lib64/lib-imsvideocodec.so|c4139d995d33ed798b8b08d374c539c2042dbbf1
 system_ext/lib64/lib-imsvt.so|3de5881767ee963d8816ba70904466b80791760f
 system_ext/lib64/lib-imsvtextutils.so|bf6b02f56dffd673f4ca552fcbedcaeef2f4de7f
@@ -638,11 +632,9 @@ vendor/lib64/libqmiservices.so|050011bdba72473f64cc245bda6b1911856ad3c5
 
 # RIL - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|73112cdd5925e6bdf6c51949ec9bce4477ee8814
-system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
-system_ext/framework/qcrilhook.jar|da67e8893aadf3e8b1c9cb1ca82a469c6062575b
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0acedaf8b03bf0f7ba45b76d6e563795498f92fd
 -vendor/app/IWlanService/IWlanService.apk|7b857a7efe66fb2519874e70a58d71eee72e92e9
 vendor/bin/hw/qcrild|34ed5cea445577caa24385185cdb28881135972d
@@ -825,7 +817,6 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
--system/framework/WfdCommon.jar|206f22c57ae2ac37ef9fd1d34a0d7cb53df87d44
 system_ext/bin/wfdservice|55ef75a62a6a3a92da250d5666c27ceb9c6c7290
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
