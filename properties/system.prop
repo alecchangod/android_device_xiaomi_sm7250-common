@@ -1,3 +1,6 @@
+# APEX
+ro.apex.updatable=false
+
 # Brightness Curve
 persist.sys.brightness.low.gamma=true
 
