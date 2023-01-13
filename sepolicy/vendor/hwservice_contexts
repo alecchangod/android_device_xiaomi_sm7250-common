@@ -1,5 +1,5 @@
 # Camera
-vendor.xiaomi.hardware.campostproc::IMiPostProcService              u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
+# vendor.xiaomi.hardware.campostproc::IMiPostProcService              u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
 
 # Fingerprint
 com.fingerprints.extension::IFingerprintNavigation                                      u:object_r:hal_fingerprint_hwservice:s0
@@ -20,4 +20,4 @@ vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:h
 vendor.nxp.nxpese::INxpEse                                          u:object_r:hal_secure_element_hwservice:s0
 
 # VPP
-::vppService                                                        u:object_r:hal_vpp_hwservice:s0
+# ::vppService                                                        u:object_r:hal_vpp_hwservice:s0
