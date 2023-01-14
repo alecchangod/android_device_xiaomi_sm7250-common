@@ -29,7 +29,7 @@ endif
 # Audio
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_DLKM := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -76,7 +76,7 @@ endif
 BOARD_HAVE_QCOM_FM := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/framework_compatibility_matrix.xml \
         vendor/xtended/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
@@ -98,7 +98,8 @@ ifeq (monet,$(PRODUCT_DEVICE))
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_VERSION := r450784d
+TARGET_KERNEL_CLANG_VERSION := latest
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-latest
 endif
 
 # Partitions
@@ -145,6 +146,9 @@ TARGET_BOARD_PLATFORM := lito
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.fstab
