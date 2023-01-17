@@ -93,10 +93,6 @@ BOARD_HAVE_QCOM_FM := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_fm.xml
 endif
 
-# Init
-TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
-
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 BOARD_BOOT_HEADER_VERSION := 3
@@ -270,4 +266,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sm7250-common/BoardConfigVendor.mk
+include vendor/xiaomi/sm8250-common/BoardConfigVendor.mk
