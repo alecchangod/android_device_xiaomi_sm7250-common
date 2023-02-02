@@ -203,6 +203,7 @@ vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=1
 vendor.display.use_smooth_motion=0
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.enable_transaction_tracing=false
 ro.surface_flinger.set_idle_timer_ms=80
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_display_power_timer_ms=1000
