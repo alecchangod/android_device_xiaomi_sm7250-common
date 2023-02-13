@@ -103,6 +103,7 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-la
 else
 TARGET_KERNEL_CLANG_VERSION := vangogh
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-vangogh
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 endif
 
 # Partitions
