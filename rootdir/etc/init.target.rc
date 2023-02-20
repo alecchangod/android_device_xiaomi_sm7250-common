@@ -202,6 +202,10 @@ on charger
     chown system system /sys/class/leds/white/brightness
     write /sys/class/leds/white/brightness 255
 
+    # Smart Charging
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+
 on property:vendor.audio.cit.spkcal.copy=true
     copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
     copy /data/vendor/cit/cs35l41_cal_right.bin /mnt/vendor/persist/audio/cs35l41_cal_right.bin
@@ -297,3 +301,4 @@ service nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
