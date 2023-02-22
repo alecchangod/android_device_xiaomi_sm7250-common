@@ -81,7 +81,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
-    vendor.qti.hardware.audiohalext@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0
 
 PRODUCT_PACKAGES += \
@@ -146,15 +145,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libbthost_if \
-    libldacBT_bco
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    GCamGOPrebuilt-V3 \
     libcamera2ndk_vendor \
     libgui_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
@@ -255,10 +251,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# IFAA manager
-PRODUCT_PACKAGES += \
-    IfaaService
-
 # IPACM
 PRODUCT_PACKAGES += \
     libipanat \
@@ -336,7 +328,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libstagefrighthw \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
     libc2dcolorconvert
 
@@ -396,7 +387,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.default \
     fstab.emmc \
-    recovery.fstab \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
