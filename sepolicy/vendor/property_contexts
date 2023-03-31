@@ -1,11 +1,16 @@
+# Aware
+ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
+
 # Camera
 persist.camera.                                 u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                           u:object_r:vendor_camera_prop:s0
+persist.vendor.low.cutoff u:object_r:vendor_camera_prop:s0
 vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.                           u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
+ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
 
 # DFPS
 persist.vendor.dfps.level                       u:object_r:vendor_display_prop:s0
@@ -13,6 +18,11 @@ persist.vendor.video.dfps.level                 u:object_r:vendor_display_prop:s
 persist.vendor.power.dfps.level                 u:object_r:vendor_display_prop:s0
 
 # Fingerprint
+ro.hardware.fp.fod    u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
+persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
+vendor.panel.display               u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.                             u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.                          u:object_r:vendor_fp_prop:s0
 ro.hardware.fp                                  u:object_r:vendor_fp_prop:s0
@@ -23,6 +33,9 @@ ro.boot.fpsensor                                u:object_r:vendor_fp_prop:s0
 ro.boot.factorybuild                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.boot.hwversion                               u:object_r:vendor_public_vendor_default_prop:s0
 
+# IMEI
+ro.vendor.oem.                               u:object_r:vendor_deviceid_prop:s0
+
 # Power
 vendor.powerhal.state                           u:object_r:vendor_power_prop:s0
 vendor.powerhal.audio                           u:object_r:vendor_power_prop:s0
@@ -32,6 +45,10 @@ vendor.powerhal.rendering                       u:object_r:vendor_power_prop:s0
 
 # Mlipay
 persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_prop:s0
+persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
+
+# Property to set media performance class
+ro.vendor.media_performance_class      u:object_r:vendor_media_performance_class:s0
 
 # RIL
 ro.vendor.ril                                   u:object_r:vendor_public_vendor_default_prop:s0
