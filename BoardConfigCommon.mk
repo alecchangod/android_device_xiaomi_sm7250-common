@@ -101,6 +101,7 @@ TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_CLANG_VERSION := trb
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-trb
 else
+TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_CLANG_VERSION := vangogh
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-vangogh
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
