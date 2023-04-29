@@ -171,7 +171,11 @@ persist.vendor.camera.perflock.enable=0
 # Camera
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.vendor.camera.privapp.list=com.android.camera \
-vendor.camera.aux.packagelist=com.android.camera
+vendor.camera.aux.packagelist=com.android.camera \
+log.tag.CHIUSECASE=ERROR
+
+PRODUCT_VENDOR_PROPERTIES += \
+persist.vendor.camera.logInfoMask=false
 
 # Charger
 PRODUCT_SYSTEM_PROPERTIES += \
