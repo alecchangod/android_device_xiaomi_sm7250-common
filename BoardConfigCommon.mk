@@ -158,7 +158,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.fstab
