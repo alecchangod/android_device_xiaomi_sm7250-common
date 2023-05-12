@@ -79,4 +79,19 @@
             <instance>default</instance>
         </interface>
     </hal>
+
+    <!-- Live Display -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <version>2.1</version>
+        <interface>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
 </compatibility-matrix>
