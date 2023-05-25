@@ -1,6 +1,3 @@
-# Audio
-get_prop(platform_app, audio_config_prop)
- 
 allow platform_app cgroup:file { read };
 
 allow platform_app zygote:unix_stream_socket { getopt };
@@ -12,34 +9,6 @@ get_prop(platform_app, vendor_audio_prop)
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 binder_call(platform_app, hal_dms_default)
 
-# Leica Camera
-get_prop(platform_app, vendor_display_prop)
-get_prop(platform_app, vendor_camera_sensor_prop)
-allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
-
-# Incremental
-get_prop(platform_app, incremental_prop)
-
 allow platform_app {
     hal_camerapostproc_xiaomi_hwservice
 }:hwservice_manager find;
-
-# To get signature of an APK installed on Incremental File System, and fill in data
-# blocks and get the filesystem state
-allowxperm platform_app apk_data_file:file ioctl {
-  INCFS_IOCTL_READ_SIGNATURE
-  INCFS_IOCTL_FILL_BLOCKS
-  INCFS_IOCTL_GET_FILLED_BLOCKS
-  INCFS_IOCTL_GET_BLOCK_COUNT
-  F2FS_IOC_GET_FEATURES
-  F2FS_IOC_GET_COMPRESS_BLOCKS
-  F2FS_IOC_COMPRESS_FILE
-  F2FS_IOC_DECOMPRESS_FILE
-  F2FS_IOC_RELEASE_COMPRESS_BLOCKS
-  F2FS_IOC_RESERVE_COMPRESS_BLOCKS
-  FS_IOC_SETFLAGS
-  FS_IOC_GETFLAGS
-};
-
-# Zram
-r_dir_file(platform_app, sysfs_zram)
