@@ -81,8 +81,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
-    vendor.qti.hardware.audiohalext@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0
+
+# vendor.qti.hardware.audiohalext@1.0.vendor
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -145,8 +146,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libldacBT_bco
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -160,14 +160,15 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth Library Deps
 PRODUCT_PACKAGES += \
-    libbluetooth_audio_session \
-    libbthost_if.vendor \
-    libldacBT_bco \
-    libldacBT_bco.vendor \
-    liblhdc \
-    liblhdcBT_enc \
-    liblhdcdec \
-    liblhdcBT_dec
+    libbluetooth_audio_session
+
+#    libbthost_if.vendor \
+#    libldacBT_bco \
+#    libldacBT_bco.vendor \
+#    liblhdc \
+#    liblhdcBT_enc \
+#    liblhdcdec \
+#    liblhdcBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -368,9 +369,10 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libstagefrighthw \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
     libc2dcolorconvert
+
+# libOmxVdecHevc
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -429,7 +431,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.default \
     fstab.emmc \
-    recovery.fstab \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
