@@ -1,3 +1,8 @@
+# USB debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
+
 # Google Photos
 debug.photos.eraser_camo=1
 debug.photos.eraser_suggestion=1
