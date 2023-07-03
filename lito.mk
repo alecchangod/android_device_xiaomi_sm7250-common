@@ -386,9 +386,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Properties
--include $(LOCAL_PATH)/properties.mk
-
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
