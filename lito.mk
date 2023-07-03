@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.lito \
     audio.r_submix.default \
-    audio.usb.default \
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
@@ -145,8 +145,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libldacBT_bco
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -466,7 +465,7 @@ PRODUCT_BOOT_JARS += \
 # Thermal HAL
 SOONG_CONFIG_NAMESPACES += thermal_hal_feature
 SOONG_CONFIG_thermal_hal_feature += \
-    pid \
+    pid
 
 SOONG_CONFIG_thermal_hal_feature_pid ?= apply_1_0
 PRODUCT_PACKAGES += \
