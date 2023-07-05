@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 PixelExpereince
+<!-- Copyright (C) 2021 ArrowOS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -11,11 +11,10 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settingsprovider.overlay">
-
+    package="com.arrow.settingsprovider.overlay.lito">
     <application android:hasCode="false" />
     <overlay
-      android:targetPackage="org.protonaosp.deviceconfig"
+      android:targetPackage="com.android.providers.settings"
       android:isStatic="true"
       android:priority="1"/>
 </manifest>

@@ -373,14 +373,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
-    FrameworkResOverlay \
-    SettingsLibOverlay \
-    SettingsOverlay \
-    SettingsProviderOverlay \
-    SimpleDeviceConfigOverlay \
-    SystemUIOverlay \
-    TelephonyOverlay
+    CarrierConfigOverlayLito \
+    FrameworkResOverlayLito \
+    SettingsLibOverlayLito \
+    SettingsOverlayLito \
+    SettingsProviderOverlayLito \
+    SimpleDeviceConfigOverlayLito \
+    SystemUIOverlayLito \
+    TelephonyOverlayLito \
+    WifiResCommon
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -518,7 +519,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 
