@@ -370,7 +370,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayLito \
@@ -381,7 +381,9 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfigOverlayLito \
     SystemUIOverlayLito \
     TelephonyOverlayLito \
-    WifiResCommon
+    WifiResCommon \
+    XtendedFrameworksResLito
+
 
 # Perf
 PRODUCT_PACKAGES += \
