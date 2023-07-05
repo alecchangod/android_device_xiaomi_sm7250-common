@@ -88,6 +88,7 @@ ro.telephony.default_network=33,33
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
+persist.vendor.vonr_setting_support=1
 persist.sys.radio.force_lte_ca=true
 
 # Ram Management
