@@ -61,7 +61,7 @@ TARGET_USES_FOD_ZPOS := true
 endif
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Fingerprint
 SOONG_CONFIG_NAMESPACES += XIAOMI_LITO_FINGERPRINT
