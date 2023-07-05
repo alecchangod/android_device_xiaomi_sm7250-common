@@ -67,7 +67,36 @@
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportScreenOffUdfps">true</bool>
-
     <bool name="config_udfps_sensor_props">true</bool>
-    <bool name="config_supportsUdfps">true</bool>   
+    <bool name="config_supportsUdfps">true</bool>
+
+    <!-- Xtensions Settings -->
+    <!-- Screen Off FOD -->
+    <bool name="screen_off_udfps_enabled">true</bool>
+
+    <!-- Network traffic -->
+    <bool name="network_traffic_state">true</bool>
+    <!-- Auto-hide -->
+    <integer name="network_traffic_autohide_threshold">0</integer>
+    <!-- Show arrows -->
+    <bool name="network_traffic_arrow">true</bool>
+
+    <!-- Swipe to screenshot -->
+    <bool name="three_finger_gesture">true</bool>
+
+    <!-- Double tap on status bar to sleep -->
+    <bool name="double_tap_sleep_gesture">false</bool>
+
+    <!-- Settings dashboard style -->
+    <bool name="custom_ui_toggle">true</bool>
+
+    <!-- Ignore windows secure flags -->
+    <bool name="window_ignore_secure">true</bool>
+
+    <!-- Status bar padding -->
+    <integer name="statusbar_left_padding">20</integer>
+    <integer name="statusbar_right_padding">7</integer>
+
+    <!-- AM/PM styles -->
+    <integer name="status_bar_am_pm_values">0</integer>
 </resources>
