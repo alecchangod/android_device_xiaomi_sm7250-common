@@ -32,10 +32,6 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
 
 on init
-    # ZRAM parameters
-    write /sys/block/zram0/comp_algorithm lz4
-    write /proc/sys/vm/page-cluster 0
-
     chown cameraserver cameraserver /mnt/vendor/persist/camera
     chown cameraserver cameraserver /mnt/vendor/persist/camera/rear_dc_cal_wd.bin
     chown cameraserver cameraserver /mnt/vendor/persist/camera/jiigan_dc_cal.bin
@@ -64,16 +60,20 @@ on init
 
     chmod 0775 /data/vendor/camera
     chmod 0644 /data/vendor/camera/com.xiaomi.dcal.wd.bin
+
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
     override
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
     interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+    interface vendor.xiaomi.hardware.campostproc@1.0::IMiPostProcService default
+    interface vendor.xiaomi.hardware.cameraperf@1.0::IMiCameraPerfService default
     class hal
     user cameraserver
     group audio camera input drmrpc oem_2907
     ioprio rt 4
     capabilities SYS_NICE
     writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+    writepid /dev/memcg/camera/provider/cgroup.procs
 
 on early-fs
     start vold
@@ -215,6 +215,12 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.bin
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.txt
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.txt
+
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    rm /data/unencrypted/zram_swap
+    swapon_all /vendor/etc/fstab.default
+    write /proc/sys/vm/swappiness 100
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper

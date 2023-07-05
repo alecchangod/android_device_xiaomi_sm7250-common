@@ -88,6 +88,14 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_hidl_interfaces {
+    name: "hidl_bspcam_interface",
+    interfaces: [
+        "vendor.xiaomi.hardware.campostproc@1.0::IMiPostProcService",
+        "vendor.xiaomi.hardware.cameraperf@1.0::IMiCameraPerfService",
+    ],
+}
+
 prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",

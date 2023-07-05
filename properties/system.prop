@@ -1,3 +1,98 @@
+# Audio
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+tunnel.audio.encode=true
+
+# APEX
+ro.apex.updatable=false
+
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
+# Bluetooth
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.bt.a2dp.hal.implementation=true
+
+# Blur
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
+ro.launcher.blur.appLaunch=0
+
+# Camera
+camera.disable_zsl_mode=true
+persist.vendor.camera.perflock.enable=0
+persist.vendor.camera.privapp.list=com.android.camera
+log.tag.CHIUSECASE=ERROR
+
+# Charger
+ro.charger.disable_init_blank=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
+
+# Display
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.enable_hwc_vds=1
+persist.vendor.color.matrix=2
+
+# DPM
+persist.vendor.dpm.feature=1
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
+# Fwk detect
+ro.vendor.qti.va_aosp.support=1
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+
+# LMKD
+ro.config.low_ram = false
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# Netflix
+ro.netflix.bsp_rev=Q7250-19133-1
+
+# Netmgr
+persist.vendor.data.mode=concurrent
+persist.data.netmgrd.qos.enable=true
+persist.data.mode=concurrent
+
+# Perf
+ro.vendor.qti.core_ctl_max_cpu=4
+ro.vendor.qti.core_ctl_min_cpu=2
+
+# Radio
+ro.telephony.default_network=33,33
+
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
+persist.sys.radio.force_lte_ca=true
+
+# Ram Management
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true
