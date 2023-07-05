@@ -312,7 +312,6 @@
             <name>IMiCameraPerfService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IMiCameraPerfService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.campostproc</name>
@@ -322,6 +321,5 @@
             <name>IMiPostProcService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IMiPostProcService/default</fqname>
     </hal>
 </manifest>
