@@ -371,11 +371,16 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/SettingsLibOverlay
 
 PRODUCT_PACKAGES += \
-    SettingsLibOverlay
+    CarrierConfigOverlay \
+    FrameworkResOverlay \
+    SettingsLibOverlay \
+    SettingsOverlay \
+    SettingsProviderOverlay \
+    SimpleDeviceConfigOverlay \
+    SystemUIOverlay \
+    TelephonyOverlay
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -405,7 +410,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
