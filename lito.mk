@@ -381,7 +381,7 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfigOverlayLito \
     SystemUIOverlayLito \
     TelephonyOverlayLito \
-    WifiResCommon \
+    WifiResOverlayLito \
     XtendedFrameworksResLito
 
 
