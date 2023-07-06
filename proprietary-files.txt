@@ -7,7 +7,6 @@ vendor/bin/dspservice|081468b9bc63cab921ac1e37a95eb93bd16e23f9
 vendor/bin/loadalgo|c51fdfd59d8cd92902e011e459bc0d846854a780
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|0be8b21f30c8aba3381bb1e9279ba0ae9b730c60
 vendor/lib64/libadsp_default_listener.so|33f44a23edf2cf734658e762a19dfc207b1921b8
 vendor/lib64/libloadalgo_stub.so|f544ef182d9cdc77e02eb8cc2a29ce4c02d0ddfc
@@ -23,16 +22,43 @@ vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
 vendor/lib/libssrec.so
+vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so|
+vendor/lib/hw/android.hardware.audio@4.0-impl.so|
+vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so|
+vendor/lib/hw/android.hardware.audio.effect@5.0-impl.so|
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so|
+vendor/lib/hw/audio.r_submix.default.so|84831ec75db53877ead92487a986b931154ef6a2
+vendor/lib/hw/audio.primary.default.so|0d207ecdf47c2a3d7916bf3766230956d56938bf
+vendor/lib/hw/android.hardware.audio@5.0-impl.so|
+vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so|
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|
+vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so|
+vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so|
+vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so|
+vendor/lib/hw/android.hardware.audio@2.0-impl.so|
+vendor/lib/hw/audio.bluetooth.default.so|9d985fa2be92e4f10866165dc7cdd9bcef103137
+vendor/lib/hw/android.hardware.audio@6.0-impl.so|
+vendor/lib/hw/audio.primary.lito.so|f187f658f2279e0ec28ca531b97dd4c6a21226e4
+vendor/lib/hw/audio.usb.default.so|0b41d84958be467bad492c80bbfec8f6a114e7fa
+vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so|
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib64/soundfx/libdirac.so
+vendor/lib/soundfx/libasphere.so|44cd20e13920888b29d3b2e4bb0b2559a746bf8f
+vendor/lib/soundfx/libdirac.so|1a0ece10a80574188167bba189ec11045c3c2e5a
+vendor/lib/soundfx/libshoebox.so|8c25f9bd479540f1b43c6827020376a40a667270
+vendor/lib/soundfx/libmisoundfx.so|2132825f59e603b083bfaf1d92712ef1142dec35
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|
 
 # Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth_qti.default.so
@@ -55,6 +81,187 @@ system/system/lib64/libldacBT_abr.so
 system/system/lib64/libldacBT_enc.so
 system/system/lib64/liblhdc.so
 system/system/lib64/liblhdcBT_enc.so
+
+# Camera
+framework/vendor.xiaomi.hardware.campostproc-V1.0-java.jar
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|
+vendor/lib64/android.hardware.camera.provider@2.4-external.so|
+vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0.so|
+vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so|
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so|
+vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so|
+vendor/lib/vendor.qti.hardware.camera.device@3.5.so|
+vendor/lib/vendor.qti.hardware.camera.device@2.0.so|
+vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|
+vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|
+vendor/lib64/vendor.qti.hardware.camera.device@2.0.so|
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|
+vendor/lib/libcamerapostproc.so|8127c2b2d2c420a536968446b3d25fe78ec7f79b
+vendor/lib/libcamera_nn_stub.so|e70adb7aa1ed248a27ba89a71e7ec52495ede036
+vendor/lib/android.hardware.camera.provider@2.4-external.so|
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so|
+system_ext/lib/vendor.qti.hardware.camera.device@1.0.so|
+system_ext/lib/vendor.qti.hardware.camera.device@3.5.so|
+system_ext/lib/vendor.qti.hardware.camera.device@2.0.so|
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|
+vendor/lib/camera/fdconfigpreview.bin|a9f2f5925c713f8c500268ff0fe5c9d4ab46d16e
+vendor/lib/camera/com.qti.sensor.monet_front_s5kgh1.so|596ea11c5ce4b91c8ccd53cdbf247ade6976d64d
+vendor/lib/camera/com.qti.sensor.monet_depth_gc02m1.so|83773c5156434f57f18d84c202870787db7d596c
+vendor/lib/camera/com.qti.sensormodule.monet_sunny_wide_ov48b2q.bin|c5f55509d6479d46b5e3c7edfe394529617f5581
+vendor/lib/camera/com.qti.eeprom.umi_sunny_s5k5e8yx_depth.so|a7aa4d3af95d978aba14f1df56d21f374133050e
+vendor/lib/camera/com.qti.sensormodule.monet_sunny_gc02m1_macro_i.bin|09d9c0355ed98f0a1cd9ebb3265d79f8be677e06
+vendor/lib/camera/com.qti.eeprom.vangogh_sunny_ov08a10_gt24p128c.so|ac38cef94d63f109ed31919d5870e5f9186aca39
+vendor/lib/camera/com.qti.sensor.monet_wide_ov48b2q.so|28049e730d16fa33208ab2368b43b10c38e4447f
+vendor/lib/camera/com.qti.sensormodule.monet_ofilm_wide_ov48b2q_ii.bin|c56d686a641e31441da45bf64ded4626875da7e7
+vendor/lib/camera/com.qti.tuned.monet_ofilm_wide_ov48b2q.bin|5a9be296fdc48948a82fbb70613f5375fb99712a
+vendor/lib/camera/com.qti.tuned.monet_sunny_macro_gc02m1.bin|627d8216314b38cce4a32ae2d9908722b1a17d9c
+vendor/lib/camera/fdconfigvideolite.bin|a9f2f5925c713f8c500268ff0fe5c9d4ab46d16e
+vendor/lib/camera/com.qti.tuned.monet_ofilm_depth_gc02m1.bin|fe92f2002f8fc1935726f64e20d6338381d56a9a
+vendor/lib/camera/com.qti.eeprom.monet_ofilm_gc02m1_gt24p64b.so|310a92fb52b43806cc876122d07bd133904e90cb
+vendor/lib/camera/com.qti.eeprom.monet_sunny_ov48b2q_gt24p64b.so|9bb601288e14376dc6c6a4a330c4ea6a934a8dee
+vendor/lib/camera/com.qti.tuned.monet_sunny_wide_ov48b2q.bin|6d012ee5e41cca4083b688ffa4b946a9e5772e0c
+vendor/lib/camera/com.qti.sensor.monet_ultra_ov8856.so|3460eec2d78df04b3aa95929d0f21421297af1ee
+vendor/lib/camera/com.qti.sensor.monet_front_ov16a1q.so|57492c05ee660342fd5ee9f21d30f402baf04cfa
+vendor/lib/camera/com.qti.sensormodule.monet_ofilm_ov16a1q_front_i.bin|8daeab9bd9672e0a20893c8ac81611b6f75ff964
+vendor/lib/camera/com.qti.tuned.monet_sunny_ultra_ov8856.bin|1045a8054da62d2cf96d743913a49875149dd133
+vendor/lib/camera/com.qti.eeprom.monet_ofilm_ov48b2q_gt24p64b.so|ad1f42a36927da5d7cec7dadf1eeb7c04c55d101
+vendor/lib/camera/com.qti.eeprom.monet_ofilm_ov16a1q_gt24p64b.so|286ade0cd362af8a14aebfb61fefbd71ac2fcc85
+vendor/lib/camera/com.qti.sensor.vangogh_tele_ov08a10.so|1dd6eb4e3e3161869b1ed1df0cf3fe46dabf7e62
+vendor/lib/camera/com.qti.sensormodule.vangogh_sunny_ov08a10_tele_i.bin|bc7a3c8867ec0aa9de0d682bc48ba16eb0cf3998
+vendor/lib/camera/com.qti.tuned.monet_ofilm_front_ov16a1q_global.bin|90315500d768002fa7a2cd3ad8f3c4263d3d030f
+vendor/lib/camera/fdconfigvideo.bin|a9f2f5925c713f8c500268ff0fe5c9d4ab46d16e
+vendor/lib/camera/com.qti.sensormodule.monet_ofilm_ultra_ov8856_ii.bin|78cf6ccc84bf7d1e0fa2880d02a25c81324e8dd0
+vendor/lib/camera/com.qti.eeprom.monet_sunny_gc02m1_gt24p64b.so|dcd59f5377c2e8539b7377652d50fd51196dd39e
+vendor/lib/camera/com.qti.sensormodule.monet_ofilm_gc02m1_depth_i.bin|3333c1bfde69843fd35562771c4dc4d17bc9e0ea
+vendor/lib/camera/com.qti.tuned.monet_sunny_front_s5kgh1.bin|8d5ca6abde6823a2abb44e0b2a415df0305387b8
+vendor/lib/camera/com.qti.sensormodule.monet_ofilm_gc02m1_macro_ii.bin|f8ef9c3e46db239fea2bb5235a3806e65b1da773
+vendor/lib/camera/com.qti.tuned.monet_ofilm_macro_gc02m1.bin|2bd50e8ad8ba0ab3f48dee7626bf09e233e0af44
+vendor/lib/camera/com.qti.eeprom.monet_sunny_s5kgh1_gt24p64b.so|89777ed75f1b59392777a57590ae08111fbcb601
+vendor/lib/camera/com.qti.sensormodule.monet_sunny_ultra_ov8856_i.bin|e3be40b919aa28bf55e056ca908f63bb25f22aac
+vendor/lib/camera/com.qti.tuned.default.bin|44df78c8958bbc9afaa43c50c4ecc219fb404045
+vendor/lib/camera/fdconfigpreviewlite.bin|a9f2f5925c713f8c500268ff0fe5c9d4ab46d16e
+vendor/lib/camera/com.qti.tuned.monet_ofilm_ultra_ov8856.bin|c41e31389410f80c1cdba373896adb3b47e8bb00
+vendor/lib/camera/com.qti.sensor.monet_macro_gc02m1.so|841b11aa408754bce94e434d75b110d3e8827411
+vendor/lib/hw/camera.qcom.so|0dfbb0f7ab7171508dd363f2fe25b948e5060858
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so|
+system/lib/vendor.xiaomi.hardware.campostproc@1.0.so|
+vendor/lib/com.qti.feature2.generic.so|b078af2e1ad5f4489d8a1056411cba8d49da280e
+vendor/lib/com.qti.feature2.serializer.so|a1d0765255225ab6e646a094b560c9d014d2ace2
+vendor/lib/com.qti.feature2.demux.so|6ada463df4d451b18f3aa4fb762c8742d242dd04
+vendor/lib/com.qti.feature2.hdr.so|ef3e14fdaec1333f191b329a214b8c2f1d3d2637
+vendor/lib/com.qti.feature2.rawsupernight.so|6f147ccc6e890ce127ba068477a07840b8831c38
+vendor/lib/com.qti.feature2.rawhdr.so|aa2dc023ffaea4de76e7dce08cf7bd2151ad689f
+vendor/lib/com.qti.feature2.gs.so|14935f12845b9574110409d37b6b4b0374b6e74b
+vendor/lib/com.qti.feature2.softispsupernight.so|575e54b2482cb2a78a8ea746acac47fe1d099729
+vendor/lib/com.qti.feature2.qcfa.so|a121a7a303e7b7bf8475d2c10894a3fefd680b59
+vendor/lib/com.qti.feature2.fusion.so|feceeea991d2c8a057ed92240b6c41799141c0a5
+vendor/lib/com.qti.feature2.stub.so|4184b4ce53ef6630b79614a6f76f9c51d9c06451
+vendor/lib/com.qti.feature2.memcpy.so|a367fd322243a582539c2ea076e66693ed75720a
+vendor/lib/com.qti.feature2.frameselect.so|33d542f46bc48d3d18c9edb867324a98e19cb02d
+vendor/lib/com.qti.feature2.rt.so|a502df635c653ce4bde4cedec7fc4608e9356148
+vendor/lib/com.qti.feature2.mfsr.so|67198f297f22056222019ac5a2a0672e0650734e
+vendor/lib/com.qti.feature2.swmf.so|7dcc82711cf311e8d5fd63882914b9ec3b0f416e
+vendor/lib/com.qti.feature2.sr.so|508538b460bdc8dd9cc2c58018f997e3663239d3
+vendor/lib/libI420colorconvert.so|bd1aeb8564b121f7e2e41bc9bae094b6becfdb04
+vendor/lib64/libmiai_portraitsupernight.so|7c5d03f82a475a672480d7754dd265605001c4dd
+vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|
+vendor/lib64/libhdrdynamicootf.so|4bd09dd4a48176b18a64cfa14faacbe22a43366f
+vendor/lib64/libhdrdynamic.so|917095388aaa80685fadcf10e414ff1261350aef
+vendor/lib/hw/consumerir.default.so|bf3bd0cb5eae8bb11c2024876a3752440727c79d
+vendor/lib/hw/com.qti.chi.override.so|8e66f5fdd3f75797bd61eb4081de384e77a4d388
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service|
+vendor/lib64/libmodemapi.so|fa935f171758d263e441fd48e9973a7c4754d167
+vendor/lib64/libMpeg4SwEncoder.so|faf3705772ae55f8181bed997ac08bb9d1863abe
+vendor/lib/libcapiv2svarnn.so|1ce885774b9bfbcd59e1a7e0664c9ea9eb61efe7
+vendor/lib64/libhydra_common.so|0c55d722159aec91b822726c23d6314dfba50f11
+vendor/lib/libos.so|6e74b4262f9bcefa11b0ebe1baf7436225fbea46
+vendor/lib/libofflinelog.so|dcc303df31bd7ed0b824635b60a87956b6ebfbc0
+vendor/lib64/libst_sr_models.so|0382f4cf2c98cff216c741392e0a9897df8bce46
+vendor/lib/libMpeg4SwEncoder.so|5ece5c259302a936c83f8d216540b11024d56742
+vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
+vendor/lib/libstagefright_soft_avcdec.so|cace7995527d81e7fb82778bfd9b3771d96ff9d9
+vendor/lib/libstagefright_soft_flacdec.so|ac6978a9d31f45374bb786463f0dd01e739aba71
+vendor/lib/libstagefright_soft_aacdec.so|434050207d0301847e92a16920d2991bd6b401e1
+vendor/lib/libsns_fastRPC_util.so|0570f721794a220884c95481f523b3907905d729
+vendor/lib/libsns_registry_skel.so|52cf14b95c2dab420a0215e74f69c4c6bc4552ec
+vendor/lib/libstagefright_soft_amrdec.so|5abdfe21144918e3f4707896acd7a2f8ea8362d7
+vendor/lib/libswvdec.so|6d90a3f694990d1c277f88924f54e38fded2a563
+vendor/lib/libsns_low_lat_stream_stub.so|0bb19f3fabbbe25539056257f0d7dc9b6dc86917
+vendor/lib/libswregistrationalgo.so|c4aa9527e1e326c75bf2ede5be1a2c525916114c
+vendor/lib/libsnsdiaglog.so|4ca1f16f9219f4651e136cfa1c55e99cbdb2aa00
+vendor/lib/libsns_device_mode_stub.so|3ea8fd1e5c36ebbc8e6ed488f7c8e38787bb2d28
+vendor/lib/libsnsapi.so|b443d41246ab65fea2c701d7b3b3c159c5191f3a
+vendor/lib/libsynx.so|e2681047f1c9ab620865e8f790bb2e6ef03f5fa4
+vendor/lib/libcom.qti.chinodeutils.so|4cc70d56fbcd44aa6ba7a4c7a84546e645adcfa5
+vendor/lib/libcvp_common.so|c0a6d0f91df789e0adb972d9c68a93623b0b794d
+vendor/lib/libchilog.so|e1d5b68ed10ebe9cf2f5da2266bccaf9868a8b10
+vendor/lib/libcvpcpuRev_skel.so|39fc69ef1cabfda67bb21300641e08340e9b3c97
+vendor/lib/libadsprpc.so|d39b65733bf23621abe825569ce69d276ab3c274
+vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
+vendor/lib/libthreadutils.so|0db27358e9ad2f07effd8f2fa41bcc0e3b2c30f2
+vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
+vendor/lib/libipebpsstriping.so|79d2f63c6dceb1e3d1569fa88f19383fe84ed62e
+vendor/lib/libnanopb.so|9dfb7949ade0596cd28bbb8dcbbfefee1c24b315
+vendor/lib/vendor.qti.esepowermanager@1.0.so|
+vendor/lib64/libFlacSwDec.so|1aa31537b6f1f5752eb44486310647631cbb5c89
+vendor/lib64/libadsprpc.so|7ad11fdc57a1b5efc1527b352b3667bb8c3c9f3a
+vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
+vendor/bin/ppd|947aeb630a900a4ec1aa2b14717a6f0316c96bab
+
+# Camera components
+vendor/lib/camera/components/com.qti.node.dummysat.so|d4ef1a556a5095c2185cbcba1b9d803067b356ff
+vendor/lib/camera/components/com.qti.node.gpu.so|a66f6b11d18e43a7aa0bbc6e0653d5adb778d3fb
+vendor/lib/camera/components/com.qtistatic.stats.pdlib.so|13b94e52d01d63d70d058b5283243067a15f5f78
+vendor/lib/camera/components/com.qti.stats.afwrapper.so|ed95a15212543a0d94f34aeaaf876505702c850d
+vendor/lib/camera/components/com.qti.stats.pdlib.so|c361effa96483095a5449c618ffd7e1ea226a2c3
+vendor/lib/camera/components/com.qtistatic.stats.awb.so|df41771cedf61d0d6570b56827389d893f380e66
+vendor/lib/camera/components/com.qti.stats.aec.so|caa51f086f050364b8a01daf39a697fd6fa9a623
+vendor/lib/camera/components/com.qti.stats.hafoverride.so|c23246a00bfd08beb074008bbef79f06e8f1975c
+vendor/lib/camera/components/com.qti.stats.tracker.so|d1913e910cef833b32aedf1f9806f0c2f3339005
+vendor/lib/camera/components/com.qti.stats.aecwrapper.so|ff836e3fc700f4aeba7cd6b53ce8dd492757e7ea
+vendor/lib/camera/components/com.qti.eisv2.so|03b40bc5a98e3b9fbfa6b4464d0b86b1cdc4c879
+vendor/lib/camera/components/com.qti.hvx.addconstant.so|dc0e3ca4f7b8a3999a8deeb577ebb553cccced6e
+vendor/lib/camera/components/com.qti.node.stich.so|806e7c3d4f0442460bfbd4c14f33e2879ad827c3
+vendor/lib/camera/components/com.qti.camx.chiiqutils.so|9838cea153d3f90f63b9f61eab3cb31e4c8ceb67
+vendor/lib/camera/components/com.qti.node.fcv.so|1bd39bb99ed14f45e7f0ca4934ba7038ae905396
+vendor/lib/camera/components/libdepthmapwrapper.so|68c213d825a60e92d0026b91629a6d1e70c98815
+vendor/lib/camera/components/com.qti.node.swregistration.so|d585aa078f476dcaafa04230336f8cbe77a8829b
+vendor/lib/camera/components/com.qtistatic.stats.af.so|d1607c37ec16e4b96610dc2de356b624502a8a70
+vendor/lib/camera/components/com.qti.stats.afd.so|3f7941d36913d054e3ad9690a408d0955d7d30b4
+vendor/lib/camera/components/com.qti.node.eisv3.so|e98b3eee40fc22b30550671cfe095c0f18d50440
+vendor/lib/camera/components/com.qti.node.memcpy.so|f00df7f507297b90ee6a105918a62157a0910928
+vendor/lib/camera/components/com.qti.stats.haf.so|944313d2005c7099e28e5fce787070ebf09a05f9
+vendor/lib/camera/components/com.qti.hvx.binning.so|e06dca09e45f1b975ba84206dd9df1995f5df15a
+vendor/lib/camera/components/com.qti.node.eisv2.so|fe0d7e3bd827dba718d4d1b191f11ffc8a1b806f
+vendor/lib/camera/components/com.qti.stats.awb.so|6f0350f56d45cdef4b9084dc983adddbbb67396e
+vendor/lib/camera/components/com.qti.stats.asd.so|c3abc0c737a2bb1ab8d4d12d3c972bb00156326f
+vendor/lib/camera/components/com.qti.stats.pdlibsony.so|569ff2dd518b37e2dee560b81cc4cd4a1a23a51c
+vendor/lib/camera/components/com.qti.stats.awbwrapper.so|9b71944be10296bbdeda0ff2f9175ad3269b8185
+vendor/lib/camera/components/com.qti.node.depth.so|2e95cc1df800ad3a50a752e085ec2d9b31df7903
+vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so|d76313e7864abdc24388fad382994f734a1191c2
+vendor/lib/camera/components/com.qti.eisv3.so|e25221f2e7e0a55d61fcf6ebb7fefac03350288b
+vendor/lib/camera/components/com.qti.node.dummyrtb.so|709de55f761d7cd61d877b8a4e7c0fadc853cde1
+vendor/lib/camera/components/com.qti.stats.af.so|18151c9d70ac35bdae167680954dce932ba6814c
+vendor/lib/camera/components/com.qti.node.customhwnode.so|d698db16c9a1a01863e2167ef57928d766560fdd
+vendor/lib/camera/components/com.qtistatic.stats.aec.so|20e810efe0d0f7685d14d99bf64d0d32f66d92a4
+
+# CameraX
+vendor/lib/libcamxfdengine.so|84ee458db6cd32ca492a8e70fab57ed1aaae64db
+vendor/lib/libcamxfdalgo.so|b7b417f1c57521355e8e10b8a127cfd4fabdbec3
+vendor/lib/libcamxexternalformatutils.so|2b734ebf21468004536778613cf00b8f8a19348a
+vendor/lib/libcamxswprocessalgo.so|13dad1f594a357487a384a2bbeb0bd58813c3fda
+vendor/lib/libcamxtintlessalgo.so|e7f3debc9307b7d66d3eaaf10c4fd4e1e777987b
+vendor/lib/libcamxifestriping.so|250325ea684235136db6a03ae3489e127b4c5129
+vendor/lib/libcamxncs.so|79c59533a23a3291fc90bb7d89d673aacd7437bd
+vendor/lib/libcamximageformatutils.so|2174da24cff80319d80759a572e35aa1f2c926fa
+vendor/lib/libcamxfacialfeatures.so|05cd39478a63796a43be26862aba1be6660a9050
+vendor/lib/libcamxstatscore.so|1b49638b6ffd0d098cebde76d2b4186bfb793fdf
+
+# CameraX Vendor Extensions
+system_ext/framework/camerax-vendor-extensions.jar
 
 # CDSP - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/cdsprpcd|2257675e907dce9ed4a328d66caae44096221bb8
@@ -139,7 +346,6 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|94729e43c883f36
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|b8f9d84270f5b22ca9627eabc9690c94f4836e81
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|96546b3657267f53ed30ec13810e6f49d43a8a96
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|c069b1fac0577757687792d84a3e7d7edf6214bd
-vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|681980a941922a8e18acfb82ff8c26fe3184ee57
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|0492c1757d43b82f33c0dfdf8ef0a4d91d08ee06
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|2e0cce56305ed232f81a24cd972840c09b50073c
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|92cd220e35b2dfa359f8d9ab8ffbc5447bfcf0fc
@@ -176,7 +382,6 @@ vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 # Display postprocessing - from nio
 vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
 vendor/lib64/vendor.display.color@1.0.so|276f34f778d27b81d63345bc19c42f0327d21046
 vendor/lib64/vendor.display.color@1.1.so|12aff2fe85a61e7c11d0ae4cb3df7082941630c3
 vendor/lib64/vendor.display.color@1.2.so|d5403de920778a3f69f739217207cbfa7a309a0a
@@ -184,39 +389,88 @@ vendor/lib64/vendor.display.color@1.3.so|a19542adeb2e39b76e499f1d3906918a586ef46
 vendor/lib64/vendor.display.color@1.4.so|caa75a7dc5f47ae1128936bdd9906c34d6e88c66
 vendor/lib64/vendor.display.color@1.5.so|2816ad7ee01408a8a91f14307a8b29e1c370ab4e
 vendor/lib64/vendor.display.postproc@1.0.so|b3c3811c5f07773ef156701c31c448b85ad60c64
+vendor/lib/vendor.display.postproc@1.0.so|
 
-# Dolby - from 9R OOS 11.2.8.8
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
-vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
-vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
-vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
-vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
-vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
-vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
-vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c
-vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
-vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
-vendor/lib64/soundfx/libeffectproxy.so|e09115bb4087510eab62d21ab050274d6c98db71
-vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
-vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
-vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
-vendor/lib64/libdapparamstorage.so|b820de455f13bce531331f9e134b1e56b8a651d4
-vendor/lib64/libdeccfg.so|adea652793ab688253b0b56d6c165625184eab54
-vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0
-vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad
-vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92
-vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
+# Dolby - from Sony Xperia 10 kirin_dsds-user-10-53.1.A.2.2-053001A00020000200894138764-release-keys
+system_ext/app/DaxUI/DaxUI.apk|9e71787d9e6ebd733e80b936db1d6ff3842f3d64
+system_ext/app/Audiosettings/Audiosettings.apk|1f9bf14c5c6d9b0d157673d95d89f21508cc3fb4
+system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk|49ec3f6b0f33d2ce0c32863b1fc0149dff86c756
+system_ext/priv-app/daxService/daxService.apk|2449cc2b65b6d9a8f7110337a3c3833459d0a892
+system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk|4438275765013a489e448b69be54369e38a2dd79
+framework/com.sonyericsson.idd_impl.jar|5ac1b2477cc3c6e5b6a460033b1ba4ece082de8b
+framework/com.sonymobile.getmore.api.jar|1db20f0c72909a53c267d4d4bf17d024cc2503da
+framework/semc_audioeffectif.jar|a897d9cf2a655336ab2de2a908ac0d9e52e4b907
+framework/dolby_dax.jar|da1625feedcb0ebfc2f217643c3f22ade82a111f
+framework/sonyaudioeffect.jar|e6436fba2146c492a9955deeed14e639f93b194a
+
+# Dolby libs - from Sony Xperia XZ2 akari-user-9-TAMA2-2.0.1-191021-1837-1-dev-keys
+lib/libhscomp.so|255a9b482949085ac16155da0a951811fdb7f7f4
+lib64/libhscomp.so|e972e6402cce8c6915e831da14379c5bb1d35b1c
+lib/libhscomp_jni.so|a93eee0cef826831e9b24f0a3a74598da3b15e3b
+lib64/libhscomp_jni.so|847bfd08ed61a95a835a95ae5a95dbcd8e739ce0
+
+# system_dolby - from Sony Xperia 1 II qssi-user-10-58.0.A.3.31-058000A003003102854466984-release-keys
+lib/libaudio-resampler.so|282bbf47ddabafee3b8e526a54374e25669e5776
+lib/libhidlbase.so|414a43cd18a536a87107b2fd5f93c367d2d71d67
+lib/libhidltransport.so|0aa91e04e10c03bbac98727c3dbed576b3bd46cd
+lib/libhwbinder.so|fb31361a8b30748566c0a273283444d0f21e0782
+lib64/libaudio-resampler.so|7fe3813f3a7359616d562a2a927e7b9710b7ee55
+lib64/libhidlbase.so|a12d767d84d1854dbfa33bf0b0149c84776d75b6
+lib64/libhidltransport.so|16862516c82af125c55c362efc7a70debaccac17
+lib64/libhwbinder.so|9bd913913cd04c53b1068481572f8cce1f3abc74
+vendor/etc/dolby/dax-default.xml|8a7886fd847e8d5566cca99823c5d6cffd312c81
+vendor/etc/sony_effect/sforce_param_arm.bin|602aeb35257192dcba82bacb808c1fd2f81a81d7
+vendor/etc/sony_effect/xloud_param_qdsp.bin|d989a97425508b61c05f296866fba3826cbafc9c
+vendor/etc/sony_effect/clearphase_sp_param.bin|c616b51db8bf03ad5c219fe933ff209565b67dac
+vendor/etc/sony_effect/effect_params.data|b62c0a23c93049d2b1e648f481146a9cf46489bd
+vendor/etc/sony_effect/sforce_param_qdsp.bin|69a272e16c57ab6e7fc8abd3265f80f3276fda35
+vendor/etc/sony_effect/xloud_param_arm.bin|9a74e3055b3884387be42a0ea4ef67da95c20dc1
+odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|
+etc/permissions/dolby_dax.xml|9fdd685e2bb32a5089976aee142c0693e66ec386
+etc/permissions/privapp-com.sonyericsson.soundenhancement.xml|02372177dfbd9ed21d9996a868ff758c8af77607
+etc/permissions/privapp-com.sonymobile.audioutil.xml|c0cef16f9325095d4c1f4c23b314244291d891cd
+etc/permissions/com.sonyericsson.idd.xml|0e53a3c7958776ab18e424eacb5bf1378099cdcd
+etc/permissions/semc_audioeffectif.xml|933845706b156ad64c4d07e9d494c00cc32fc27e
+etc/permissions/privapp-com.dolby.daxservice.xml|7e83188fe32e6210de8d943b328893a32531c98d
+etc/permissions/com.sonymobile.getmore.api.xml|ebe38a6221e4d6bda173fff998e85d6d6c9a83ed
+etc/permissions/sonyaudioeffect.xml|af251fc27322aee2d810d93e5385312fb71ebc6e
+etc/sysconfig/config-com.dolby.daxappui.xml|6f679ab14a2124e43b11dd9554e62afe9e5bf911
+etc/sysconfig/config-com.sonymobile.audioutil.xml|24edaf69ba604e825f64e430807977be9bd89444
+etc/sysconfig/config-com.sonyericsson.soundenhancement.xml|b1d02cc240ab260cc005861e21c941f1b37ede77
+etc/sysconfig/config-com.dolby.daxservice.xml|b4455336443968c5f7ac0d39b8c99dd43298681c
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service|
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|
+vendor/etc/dsx_param_file.bin|0c6b5a5b9dbdd7e4e4a0f649dfb2d09c591e7f84
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc|
+vendor/etc/media_codecs_dolby_audio.xml|8964c37503282a1430fec616b4c873ec786f3ce0
+vendor/etc/media_codecs_somc.xml|9d3901fcf010eee45acd3c0841bfe72b9925f209
+vendor/lib/libdapparamstorage.so|fc93fab889140b8ac8266477d380e898bc524efb
+vendor/lib/libsonydseehxwrapper.so|e4361ac33ceab055feeb23c95cf543f94c8f8ba1
+vendor/lib/libstagefright_soft_ac4dec.so|0c161972a879bfa840af24bf2e10bcf46bfcf21b
+vendor/lib/libstagefright_soft_ddpdec.so|0ec6dce86527d41dfb353ef4fb7472920d4ebe03
+vendor/lib/libstagefright_soft_somcalacdec.so|f986dce2636c41b4f234986fc773b04f627f614e
+vendor/lib/libstagefrightdolby.so|ec72f459b50cf2683e093f7382c1e4a1901ecc47
+vendor/lib/soundfx/libeffectproxy.so|21e6cc1d30792dffcb44bcd36eeb5ca0249f80d5
+vendor/lib/soundfx/libsonypostprocbundle.so|b30eb04b37b99232c735766fb862bfb4c732c5f1
+vendor/lib/soundfx/libsonysweffect.so|f8db2b9adb2dba2fa089d44f630bc09255a58ecb
+vendor/lib/soundfx/libswdap.so|786804759db38d922763a09af2dabfa85e7e3481
+vendor/lib/vendor.dolby.hardware.dms@1.0.so|
+vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
+vendor/lib/libOmxAlacDec.so|e4bf3041694249791275129f1ea2fe693b6b0605
+vendor/lib/libOmxAlacDecSw.so|52f621471424e3fc93f816a7608350cfcace99df
+vendor/lib64/libdapparamstorage.so|fc425be476571e7e7f3cb31b87eb23b3007a8420
+vendor/lib64/libdlbdsservice.so|efc0de8c6909d15afc745ae0fb2943cb307002c1
+vendor/lib64/libsonydseehxwrapper.so|d177c71c80707c8e69f7fb492e6fbeb66e66bd25
+vendor/lib64/libstagefrightdolby.so|4dd9a621fb167ca93f79356c02e18f80427426b0
+vendor/lib64/soundfx/libswdap.so|c75ddf545fb0d63931d6a4c8bb365897015383e9
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so|
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so|
+vendor/lib64/libAlacSwDec.so|6e0e351d24c3b7b848f2923cf7d69d3e63ec9800
+vendor/lib64/libOmxAlacDecSw.so|a6dfca665cfddf529ba89ff982cc88eb70d9a2b8
+vendor/lib64/libOmxAlacDec.so|f7d1842380045b8f0b2d909e1773824ae1d24e4f
 
 # DPM - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-system/framework/tcmclient.jar|8483036d9354e88f8875d5eb2618165855438b09
+framework/tcmclient.jar|8483036d9354e88f8875d5eb2618165855438b09
 system_ext/bin/dpmd|d8d958c1e3e3962903505bc4e5e74017ba9d3c3d
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -265,8 +519,6 @@ vendor/lib64/libtzdrmgenprov.so|cd8048d3f0fc4f314e4dbd60585f44619b08a7a0
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|5b1046bc7c8a3f590bfedde06490b51adfeca923
 
 # DRM (OEM Crypto API)
-vendor/lib64/libcpion.so
-vendor/lib64/libminkdescriptor.so
 vendor/lib64/libtrustedapploader.so
 
 # DRM (Widevine)
@@ -277,10 +529,8 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
 # DSP service
-vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ESE - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
@@ -366,12 +616,6 @@ vendor/lib/hw/vulkan.adreno.so|a77dc4decf18a8bb0cf01d58e6901e842650de8a
 vendor/lib64/hw/vulkan.adreno.so|cf6f99a6109b5f4108a631caa0cdd221b70263ad
 
 # Graphics (Adreno firmware)
-vendor/firmware/a620_zap.b00
-vendor/firmware/a620_zap.b01
-vendor/firmware/a620_zap.b02
-vendor/firmware/a620_zap.elf
-vendor/firmware/a620_zap.mdt
-vendor/firmware/a630_sqe.fw
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.b00
@@ -514,6 +758,12 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|ae076abbaadb744f81e171f1dbaed23b19b
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|68d36a14afd9da80ff99d8d8e2c91b53268d2173
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|846de8369304eaaf4b05ee948ca84298b39ace3e
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|6d4b854e7ba91ef98398568c365a131cf4c01c93
+vendor/lib64/libsdk_sr.so|5e4f94542fd33834908a34d1bdb5ab650d18f40c
+vendor/lib64/libbeauty_face_interface.so|e3bcd58f33c195d9b2c3a7e4688a80c468d8aa57
+vendor/lib64/libflaw.so|51d1594d70494e542f842eb0ab404f6429923fcf
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -532,8 +782,8 @@ vendor/etc/msm_irqbalance.conf|048e1a7f35df0e7acb14cb573d4aab363ea7c8bd
 # Listen - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/lib/hw/sound_trigger.primary.lito.so|eea1b9ecc036a7db729f5e24b918aaa822404feb
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
-vendor/lib/libcapiv2svacnn.so|c897fbba664fcb0ea1951d3220d8db54ae0d7995
-vendor/lib/libcapiv2vop.so|1cceaefcc1ca55de5bc932a846091e6702c5d508
+vendor/lib/libcapiv2svacnn.so|10271e9d5a32377740292bcf27f35098ee65fb5b
+vendor/lib/libcapiv2vop.so|ffde544a5b8b4db988e92308568a84caad80518e
 vendor/lib/libgcs-calwrapper.so|2808edd947a19a2464f81f69d609ddbac11e4e6f
 vendor/lib/libgcs-ipc.so|6fe8f1a39450a90a16433b3a2b1791781f11ef04
 vendor/lib/libgcs-osal.so|2f1ff749e6c2210d715486ac0d01046f2aa93abc
@@ -590,7 +840,6 @@ vendor/lib64/libqtikeymaster4.so
 
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
-vendor/lib64/libminksocket.so
 
 # Mlipay
 vendor/bin/mlipayd@1.1
@@ -606,9 +855,41 @@ vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
 vendor/lib/libsn100u_fw.so
 vendor/lib64/nfc_nci.nqx.default.hw.so
+vendor/etc/permissions/com.nxp.mifare.xml|3475f7cb552927e8599b1b881b7339c1cda67994
 
 # NVRAM
 vendor/bin/nv_mac
+
+# Omx
+vendor/lib/libOmxSwVdec.so|451e48ed0b131ec4e44194c3c8f6928037965500
+vendor/lib/libOmxVideoDSMode.so|c4e36ec5ff61194d991ee7ac1a24998ed224b0c1
+vendor/lib/libOmxMpeghDecSw.so|eccb477e329f7178bc4daf28b1709c817734fc8e
+vendor/lib/libOmxMpeghEncSw.so|7ea10eea872ab2315f9dcf40a774853d9237ebc1
+vendor/lib/libOmxQcelp13Dec.so|9de32f322670a144ffbadabfc34281c409af4cfe
+vendor/lib/libOmxG711Dec.so|5f2c28d4f0dbb89a74e49ed98e9efa990255065a
+vendor/lib/libOmxVpp.so|7ee2ea57a5c9d053f508f114e25c59d10627a613
+vendor/lib/libOmxApeDec.so|5295a8fbfc80346cf50aac27fb8caf6ed484e316
+vendor/lib/libOmxSwVencMpeg4.so|85742b6565c9ec14e184d21ffc01839263ebacce
+vendor/lib/libOmxAmrDec.so|377d29fc698f2e0aec7f6511840641882f9a9f0f
+vendor/lib/libOmxEvrcDec.so|b5d73cca82a7b2a80a8e0cae979203f1ca2e8798
+vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
+vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
+vendor/lib/libOmxAacDec.so|15daa5bc66938671d940643a33ddc82cc5c7ef54
+vendor/lib/libOmxWmaDec.so|ace627b2c1ad6116a521935ae80b3352fd5d3c10
+vendor/lib/libOmxAmrwbplusDec.so|f0daeadbf309b5fb03834d60b4ef770a26337210
+vendor/lib64/libOmxMpeghEncSw.so|b7c9db846385f6431c3e488082c68f3488517860
+vendor/lib64/libOmxApeDecSw.so|76741dbc4de400163e692817d200ae02ab72f85e
+vendor/lib64/libOmxAacDec.so|15c13ea1fa86f59eb26420bbf4364c7eb639a8d7
+vendor/lib64/libOmxWmaDec.so|53d4b8e8a214caf7865d69cb02f4b722f0967c7d
+vendor/lib64/libOmxApeDec.so|8f9a3558d873f04f1c8bff7f5b3b06e8385fce2f
+vendor/lib64/libOmxSwVencMpeg4.so|17ac7ae89806ec4434d3404a015d3db70b3ac449
+vendor/lib64/libOmxAmrDec.so|621c36b7c8fbafdb595c92fdca2a138486775ab6
+vendor/lib64/libOmxEvrcDec.so|e92a9a579dc15b692276c3b0134cb5e431f805e2
+vendor/lib64/libOmxAmrwbplusDec.so|dc42bbd2280d5cc6e24b8e7c1f20ceca8f643c76
+vendor/lib64/libOmxQcelp13Dec.so|177c8a7bfd59965ea8a1605f39cf36133b50099a
+vendor/lib64/libOmxG711Dec.so|4ec86d7c75c85c119613b0fb5bec8e5861b88e2d
+vendor/lib64/libOmxVpp.so|85299c02bb0f830d5144fb0b01e2bf819169b3cb
+vendor/lib64/libOmxSwVdec.so|b43da1bd4c93c9cf560a6e33ce220c832d82b2d3
 
 # Peripheral manager - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/pm-proxy|1f47d90727030860c1e8b4b3bf8702ad261d2ad5
@@ -691,7 +972,6 @@ system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad99
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 system_ext/framework/qcrilhook.jar|da67e8893aadf3e8b1c9cb1ca82a469c6062575b
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0acedaf8b03bf0f7ba45b76d6e563795498f92fd
--vendor/app/IWlanService/IWlanService.apk|7b857a7efe66fb2519874e70a58d71eee72e92e9
 vendor/bin/hw/qcrild|34ed5cea445577caa24385185cdb28881135972d
 vendor/bin/ATFWD-daemon|94af1767c77ed9835cbb66b0ba729b71e0044e1a
 vendor/bin/adpl|09666fa77584b1571cf0d9d407bd022cda43d237
@@ -778,6 +1058,7 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb489
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e67f78bdb42f2b246ecc6a37cecd
 vendor/radio/qcril_database/qcril.db|f51df17ac3bf25a225e3ba15c830b1d0d2bf4e85
+system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 
 # SECCOMP policy
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -954,3 +1235,4 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so|bfd97b6d662657234774a3c9c87f8a0
 vendor/lib/libwfdutils_proprietary.so|4213b169e360a52eb30db2353b01fbb8656709f5
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|c08e1803c3089ee5da37b0a56eb9c2bdf9aeb4b2
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|fefea0a3279f850e562cfaaf4fe3b24af1dd3994
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|828999946f9dfef98f17f42a1c8daba47c2c442d
