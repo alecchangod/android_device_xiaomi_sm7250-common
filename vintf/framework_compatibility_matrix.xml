@@ -190,6 +190,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.display.allocator</name>
+        <version>1.0</version>
         <version>3.0</version>
         <version>4.0</version>
         <interface>
