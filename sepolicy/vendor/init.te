@@ -9,3 +9,6 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
+
+# Smart Charging
+allow init vendor_sysfs_battery_supply:file { setattr };
