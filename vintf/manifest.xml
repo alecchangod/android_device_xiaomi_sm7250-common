@@ -328,7 +328,6 @@
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
-        <version>3.0</version>
         <interface>
             <name>IAllocator</name>
             <instance>default</instance>
