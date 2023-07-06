@@ -14,6 +14,7 @@ vendor.camera.aux.packageblacklist u:object_r:vendor_camera_prop:s0
 vendor.camera.watermark.en         u:object_r:vendor_camera_prop:s0
 vendor.camera.boost.en             u:object_r:vendor_camera_prop:s0
 persist.vendor.low.cutoff          u:object_r:vendor_camera_prop:s0
+vendor.panel.display               u:object_r:vendor_camera_prop:s0
 
 # DFPS
 persist.vendor.dfps.level                       u:object_r:vendor_display_prop:s0
