@@ -1,3 +1,5 @@
+typeattribute platform_app c512,c768;
+
 allow platform_app cgroup:file { read };
 
 allow platform_app zygote:unix_stream_socket { getopt };
@@ -14,3 +16,15 @@ allow platform_app {
 }:hwservice_manager find;
 
 get_prop(platform_app, vendor_display_prop)
+
+allow platform_app vendor_default_prop:file { open read getattr map };
+
+typeattribute crash_dump c512,c768;
+
+allow crash_dump resourcecache_data_file:file map;
+allow crash_dump vendor_overlay_file:file read;
+allow crash_dump vendor_overlay_file:file open;
+
+# allow hal_camera_default resourcecache_data_file:file read;
+# allow hal_camera_default resourcecache_data_file:file open;
+allow { crash_dump hal_camera_default } resourcecache_data_file:file { read open getattr };
