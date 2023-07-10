@@ -3,11 +3,6 @@ persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 ro.debuggable=1
 
-# Gboard paddings
-# Keyboard height ratio and bottom padding in dp for portrait mode
-ro.com.google.ime.height_ratio=1.075
-ro.com.google.ime.kb_pad_port_b=8
-
 # Google Photos
 debug.photos.eraser_camo=1
 debug.photos.eraser_suggestion=1
