@@ -20,3 +20,6 @@ allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
 
 hal_attribute_hwservice(hal_camera, hal_xiaomi_camera_hwservice)
+
+allow system_server privapp_data_file:lnk_file read;
+
