@@ -308,8 +308,3 @@ service nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw
     oneshot
 
-service adsprpcd /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
-   disabled
