@@ -203,7 +203,6 @@ vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=1
 vendor.display.use_smooth_motion=0
-debug.sf.treat_170m_as_sRGB=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 ro.surface_flinger.set_idle_timer_ms=80
