@@ -23,3 +23,9 @@ hal_attribute_hwservice(hal_camera, hal_xiaomi_camera_hwservice)
 
 allow system_server privapp_data_file:lnk_file read;
 
+# Declare the type for the file "default_prop"
+type default_prop_type, file_type;
+
+# Allow hal_camera_default to read the default_prop file
+allow hal_camera_default default_prop_type:file read;
+
