@@ -25,3 +25,6 @@ allow crash_dump vendor_overlay_file:file open;
 # allow hal_camera_default resourcecache_data_file:file read;
 # allow hal_camera_default resourcecache_data_file:file open;
 allow { crash_dump hal_camera_default } resourcecache_data_file:file { read open getattr };
+
+# Allow platform_app to find the vendor.xiaomi.hardware.misys interface
+allow platform_app default_android_hwservice:hwservice_manager find;

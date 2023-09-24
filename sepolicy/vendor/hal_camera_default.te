@@ -28,4 +28,3 @@ type default_prop_type, file_type;
 
 # Allow hal_camera_default to read the default_prop file
 allow hal_camera_default default_prop_type:file read;
-
