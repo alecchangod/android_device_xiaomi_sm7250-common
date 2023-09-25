@@ -23,7 +23,7 @@ ro.launcher.blur.appLaunch=0
 # Camera
 camera.disable_zsl_mode=true
 persist.vendor.camera.perflock.enable=0
-persist.vendor.camera.privapp.list=com.android.camera
+persist.vendor.camera.privapp.list=org.lineageos.aperture,com.android.camera
 log.tag.CHIUSECASE=ERROR
 
 # Charger
