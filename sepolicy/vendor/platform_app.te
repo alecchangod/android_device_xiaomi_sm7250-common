@@ -1,3 +1,4 @@
+
 allow platform_app cgroup:file { read };
 
 allow platform_app zygote:unix_stream_socket { getopt };
@@ -12,3 +13,18 @@ hal_client_domain(platform_app, hal_dms);
 allow platform_app {
     hal_camerapostproc_xiaomi_hwservice
 }:hwservice_manager find;
+
+get_prop(platform_app, vendor_display_prop)
+
+allow platform_app vendor_default_prop:file { open read getattr map };
+
+allow crash_dump resourcecache_data_file:file map;
+allow crash_dump vendor_overlay_file:file read;
+allow crash_dump vendor_overlay_file:file open;
+
+# allow hal_camera_default resourcecache_data_file:file read;
+# allow hal_camera_default resourcecache_data_file:file open;
+allow { crash_dump hal_camera_default } resourcecache_data_file:file { read open getattr };
+
+# Allow platform_app to find the vendor.xiaomi.hardware.misys interface
+allow platform_app default_android_hwservice:hwservice_manager find;

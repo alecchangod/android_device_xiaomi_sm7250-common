@@ -34,4 +34,7 @@
      <!-- Disable UI touch sounds by default -->
      <bool name="def_sound_effects_enabled">false</bool>
 
+    <!-- Whether memory from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
+
 </resources>

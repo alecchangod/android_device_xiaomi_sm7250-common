@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
@@ -367,16 +368,12 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/SettingsLibOverlay
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayLito \
-    FrameworkResOverlayLito \
     SettingsLibOverlayLito \
-    SettingsOverlayLito \
-    SettingsProviderOverlayLito \
-    SimpleDeviceConfigOverlayLito \
-    SystemUIOverlayLito \
-    TelephonyOverlayLito \
     WifiResOverlayLito \
     XtendedFrameworksResLito
 
