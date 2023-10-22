@@ -205,7 +205,6 @@ vendor.display.use_layer_ext=1
 vendor.display.use_smooth_motion=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
-ro.config.avoid_gfx_accel=true
 
 # Dolby
 ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
