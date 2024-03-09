@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
-    vendor.qti.hardware.audiohalext@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0
 
 PRODUCT_PACKAGES += \
@@ -133,6 +132,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 # Bluetooth
+TARGET_USE_QTI_BT_STACK := true
+
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth@1.0.vendor \
@@ -153,14 +154,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth Library Deps
 PRODUCT_PACKAGES += \
-    libbluetooth_audio_session \
-    libbthost_if.vendor \
-    libldacBT_bco \
-    libldacBT_bco.vendor \
-    liblhdc \
-    liblhdcBT_enc \
-    liblhdcdec \
-    liblhdcBT_dec
+    libbluetooth_audio_session
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -284,7 +278,7 @@ PRODUCT_COPY_FILES += \
 
 # IFAA manager
 PRODUCT_PACKAGES += \
-    IfaaService
+    IFAAService
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -363,7 +357,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libstagefrighthw \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
     libc2dcolorconvert
 
@@ -436,7 +429,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.default \
     fstab.emmc \
-    recovery.fstab \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \

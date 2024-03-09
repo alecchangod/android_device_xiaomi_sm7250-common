@@ -159,7 +159,7 @@ TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
