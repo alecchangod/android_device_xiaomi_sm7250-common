@@ -380,5 +380,4 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 PRODUCT_SYSTEM_PROPERTIES += \
-persist.device_config.runtime_native.usap_pool_enabled=true \
-zygote.critical_window.minute=10
+persist.device_config.runtime_native.usap_pool_enabled=true
