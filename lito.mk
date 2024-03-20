@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/common/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 ifneq ($(TARGET_USES_DOLBY),true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
