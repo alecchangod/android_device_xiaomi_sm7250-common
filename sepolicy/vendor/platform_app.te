@@ -8,4 +8,5 @@ allow platform_app {
     vendor_audio_prop
     vendor_display_prop
     vendor_default_prop
-    }:file { read map };
+    }:file { read map open };
+    
