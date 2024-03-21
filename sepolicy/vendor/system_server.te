@@ -8,3 +8,5 @@ allow system_server {
     sensors_device
     proc_last_kmsg
 }:file r_file_perms;
+
+allow system_server shell:unix_stream_socket { getopt };
