@@ -378,6 +378,10 @@ vendor.usb.rndis.func.name=gsi \
 vendor.usb.use_ffs_mtp=0 \
 vendor.usb.use_gadget_hal=0
 
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.debuggable=1 \
+ro.adb.secure=0
+
 # Volume steps
 PRODUCT_VENDOR_PROPERTIES += \
 ro.config.media_vol_steps=30 \
